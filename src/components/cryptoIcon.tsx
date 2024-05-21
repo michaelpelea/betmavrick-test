@@ -9,7 +9,6 @@ const CryptoIcon = ({ name }: {name: string}) => {
 
   useEffect(() => {
     const getData = async () => {
-      console.log('loading useeffect')
       try {
         const data = (await import(`cryptocurrency-icons/svg/icon/${name.toLowerCase()}.svg`)).default
 
@@ -22,8 +21,6 @@ const CryptoIcon = ({ name }: {name: string}) => {
 
     getData()
   }, [name])
-
-  console.log('CryptoIcon icons', name, iconProps)
 
   return iconProps ? (
     <Image {...iconProps} alt={`${name} icon`} />

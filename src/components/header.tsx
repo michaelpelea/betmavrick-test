@@ -1,6 +1,7 @@
 import { GitlabIcon } from "lucide-react"
 import NextLink from 'next/link'
 import { ReactNode } from "react"
+import RTLButton from "./rtlButton"
 import ThemeButton from "./themeButton"
 
 const Header = (): ReactNode => (
@@ -8,7 +9,10 @@ const Header = (): ReactNode => (
     <NextLink href="/">
       <GitlabIcon size={36} color="red" />
     </NextLink>
-    <ThemeButton />
+      <div className="gap-4 flex items-center">
+        <RTLButton />
+        <ThemeButton />
+      </div>
   </div>
 )
 

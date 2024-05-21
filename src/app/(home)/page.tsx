@@ -9,7 +9,7 @@ const CryptoCards = async () => {
   return rates.length ? rates.map(({name, value}) => (
         <Card>
           <CardContent className="pt-6 space-y-4">
-            <div className="flex space-x-4 items-center">
+            <div className="flex gap-4 items-center">
               <Suspense>
                 <CryptoIcon name={name} />
               </Suspense>

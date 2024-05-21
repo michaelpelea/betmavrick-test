@@ -18,7 +18,7 @@ const ThemeButton = () => {
   }, [])
 
  return (
-  <div className="flex items-center justify-between space-x-4 rounded-3xl shadow-lg" onClick={darkModeHandler}>
+  <div className="flex items-center justify-between gap-4 rounded-3xl shadow-lg" onClick={darkModeHandler}>
     <div className="relative flex cursor-pointer items-center rounded-lg bg-white p-1.5 dark:bg-slate-500">
       <div className="flex gap-1.5">
         <div className={cn(darkMode && 'bg-slate-800 text-gray-50', 'p-2 rounded-md')}><MoonIcon size={16} /></div>
