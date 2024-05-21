@@ -10,6 +10,7 @@ const Header = (): ReactNode => (
       <GitlabIcon size={36} color="red" />
     </NextLink>
       <div className="gap-4 flex items-center">
+        <div id="google_translate_element" />
         <RTLButton />
         <ThemeButton />
       </div>

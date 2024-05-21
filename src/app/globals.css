@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.goog-te-gadget-simple {
+  display: block ruby !important;
+}
